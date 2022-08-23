@@ -21,6 +21,7 @@ BuildRequires:  python3-devel
 BuildRequires:  python3-gobject-devel
 BuildRequires:  libappstream-glib
 BuildRequires:  desktop-file-utils
+BuildRequires:  gettext
 Requires:       jpegoptim
 Requires:       options
 Requires:       pngquant
