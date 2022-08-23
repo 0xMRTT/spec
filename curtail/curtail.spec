@@ -16,7 +16,7 @@ URL:            https://github.com/Huluti/Curtail
 Source0:        %{forgesource}
 
 BuildRequires:  meson
-BuildRequires:  pkgconfig(gtk3)
+BuildRequires:  gtk3
 BuildRequires:  python3-devel
 BuildRequires:  python3-gobject-devel
 BuildRequires:  libappstream-glib
