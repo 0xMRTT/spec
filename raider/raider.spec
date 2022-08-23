@@ -20,6 +20,7 @@ BuildRequires:  pkgconfig(libadwaita-1)
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  desktop-file-utils
 BuildRequires:  libappstream-glib
+BuildRequires:  itstool
 
 #Requires: shred
 
