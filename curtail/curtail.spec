@@ -7,6 +7,8 @@ Release:        %autorelease
 Summary:        Compress your images
 BuildArch:      noarch
 
+%global tag %{version}
+
 %forgemeta
 
 License:        GPL-3.0-or-later
