@@ -52,7 +52,6 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 %license COPYING
 %doc README.md
 %{_bindir}/curtail
-%{python3_sitelib}/curtail
 %{_datadir}/curtail
 %{_datadir}/metainfo/%{uuid}.appdata.xml
 %{_datadir}/applications/%{uuid}.desktop
