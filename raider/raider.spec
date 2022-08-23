@@ -56,6 +56,7 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 %{_datadir}/applications/%{uuid}.desktop
 %{_datadir}/glib-2.0/schemas/%{uuid}.gschema.xml
 %{_datadir}/icons/hicolor/*/*/*.svg
+%{_datadir}/icons/hicolor/*/*/*.png
 %{_datadir}/help/*/raider/*
 
 %changelog
