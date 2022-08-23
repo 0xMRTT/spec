@@ -44,7 +44,7 @@ Curtail (previously ImCompressor) is an useful image compressor, supporting PNG,
 %find_lang %{name}
 
 %check
-appstream-util validate-relax --nonet %{buildroot}%{_datadir}/appdata/%{uuid}.appdata.xml
+appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/%{uuid}.appdata.xml
 desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 
 
@@ -54,7 +54,7 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 %{_bindir}/curtail
 %{python3_sitelib}/curtail
 %{_datadir}/curtail
-%{_datadir}/appdata/%{uuid}.appdata.xml
+%{_datadir}/metainfo/%{uuid}.appdata.xml
 %{_datadir}/applications/%{uuid}.desktop
 %{_datadir}/glib-2.0/schemas/%{uuid}.gschema.xml
 %{_datadir}/icons/hicolor/*/*/*.svg
