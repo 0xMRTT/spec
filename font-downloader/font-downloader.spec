@@ -43,11 +43,12 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/%{uuid}.a
 desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 
 
-%files -f %{name}.lang
+%files
 %license COPYING
 %doc README.md
 %{_bindir}/curtail
 %{_datadir}/curtail
+%{_datadir}/locale/*/LC_MESSAGES/fontdownloader.mo
 %{_datadir}/metainfo/%{uuid}.appdata.xml
 %{_datadir}/applications/%{uuid}.desktop
 %{_datadir}/glib-2.0/schemas/%{uuid}.gschema.xml
