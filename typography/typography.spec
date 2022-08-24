@@ -2,8 +2,8 @@
 %global uuid org.gnome.design.Typography
 %global tag 0.2.0
 
-Name:      icon-library
-Version:   0.0.12
+Name:      typography
+Version:   0.2.0
 Release:   %autorelease
 Summary:   GNOME Typography tool.
 
@@ -23,10 +23,10 @@ BuildRequires:  desktop-file-utils
 BuildRequires:  libappstream-glib
 
 %description
-Preview GNOME Typographies.
+Preview GNOME Typography.
   
 %prep
-%autosetup -n icon-library-%{version}
+%autosetup -n typography-%{version}
 
 
 %build
