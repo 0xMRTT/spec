@@ -46,8 +46,8 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 %files
 %license COPYING
 %doc README.md
-%{_bindir}/curtail
-%{_datadir}/curtail
+%{_bindir}/fontdownloader
+%{_datadir}/fontdownloader
 %{_datadir}/locale/*/LC_MESSAGES/fontdownloader.mo
 %{_datadir}/metainfo/%{uuid}.appdata.xml
 %{_datadir}/applications/%{uuid}.desktop
