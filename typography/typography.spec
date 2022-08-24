@@ -43,13 +43,12 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 
 
 %files 
-%license LICENSE.md
+%license COPYING
 %doc README.md
 %{_bindir}/%{uuid}
 %{_datadir}/dbus-1/services/%{uuid}.service
 %{_metainfodir}/%{uuid}.metainfo.xml
 %{_datadir}/applications/%{uuid}.desktop
-%{_datadir}/glib-2.0/schemas/%{uuid}.gschema.xml
 %{_datadir}/icons/hicolor/*/*/*.svg
 
 %changelog
