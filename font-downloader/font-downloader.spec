@@ -4,7 +4,7 @@
 Name:           font-downloader
 Version:        10.0.0
 Release:        %autorelease
-Summary:         Download fonts from the web! 
+Summary:        Download fonts from the web! 
 BuildArch:      noarch
 
 %global tag v%{version}
@@ -28,8 +28,7 @@ BuildRequires:  pkgconfig(libhandy-1)
 Font Downloader help you download fonts on Google Font easily
 
 %prep
-%forgeautosetup
-
+%autosetup -n Font-Downloader-%{version}
 
 %build
 %meson
