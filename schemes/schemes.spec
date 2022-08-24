@@ -1,5 +1,5 @@
 %global forgeurl https://gitlab.gnome.org/chergert/schemes/
-%global uuid org.gnome.Schemes
+%global uuid org.gnome.Schemes.Devel
 %global tag 0.1.0
 
 Name:      schemes
