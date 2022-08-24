@@ -48,9 +48,8 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/org.gnome.Schemes.de
 
 %files 
 %license COPYING
-%doc README.md
-%{_bindir}/%{uuid}
-%{_datadir}/glib-2.0/schemas/%{uuid}.gschema.xml
+%{_bindir}/schemes
+%{_datadir}/glib-2.0/schemas/org.gnome.Schemes.gschema.xml
 %{_metainfodir}/%{uuid}.appdata.xml
 %{_datadir}/applications/org.gnome.Schemes.desktop
 %{_datadir}/icons/hicolor/*/*/*.svg
