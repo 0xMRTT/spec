@@ -38,8 +38,6 @@ Font Downloader help you download fonts on Google Font easily
 %install
 %meson_install
 
-%find_lang %{name}
-
 %check
 appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/%{uuid}.appdata.xml
 desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
