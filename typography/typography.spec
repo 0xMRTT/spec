@@ -37,9 +37,6 @@ Preview GNOME Typography.
 %install
 %meson_install
 
-%find_lang %{name}
-
-
 %check
 appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{uuid}.metainfo.xml
 desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
