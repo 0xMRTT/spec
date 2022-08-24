@@ -45,7 +45,7 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{uuid}.metain
 desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 
 
-%files -f %{name}.lang
+%files 
 %license LICENSE.md
 %doc README.md
 %{_bindir}/%{uuid}
