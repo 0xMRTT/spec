@@ -2,12 +2,12 @@
 %global uuid org.gustavoperedo.FontDownloader
 
 Name:           font-downloader
-Version:        0.1.0
+Version:        10.0.0
 Release:        %autorelease
 Summary:         Download fonts from the web! 
 BuildArch:      noarch
 
-%global tag %{version}
+%global tag v%{version}
 
 %forgemeta
 
