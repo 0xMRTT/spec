@@ -44,7 +44,7 @@ users modify existing schemes to their preference.
 
 %check
 appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{uuid}.appdata.xml
-desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
+desktop-file-validate %{buildroot}/%{_datadir}/applications/org.gnome.Schemes.desktop
 
 %files 
 %license COPYING
@@ -52,7 +52,7 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 %{_bindir}/%{uuid}
 %{_datadir}/glib-2.0/schemas/%{uuid}.gschema.xml
 %{_metainfodir}/%{uuid}.appdata.xml
-%{_datadir}/applications/%{uuid}.desktop
+%{_datadir}/applications/org.gnome.Schemes.desktop
 %{_datadir}/icons/hicolor/*/*/*.svg
 
 %changelog
