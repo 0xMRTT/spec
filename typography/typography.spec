@@ -1,4 +1,4 @@
-%gloabl forgeurl https://gitlab.gnome.org/World/design/typography
+%global forgeurl https://gitlab.gnome.org/World/design/typography
 %global uuid org.gnome.design.Typography
 %global tag 0.2.0
 
