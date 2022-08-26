@@ -15,7 +15,7 @@ ExclusiveArch: %{rust_arches}
 
 License:   GPL-3.0-or-later
 URL:       https://gitlab.gnome.org/World/Authenticator
-Source0:   https://gitlab.gnome.org/World/Authenticator/-/archive/%{version}/authenticator-%{version}.tar.gz
+Source0:   https://gitlab.gnome.org/World/Authenticator/-/archive/%{version}/Authenticator-%{version}.tar.gz
 
 BuildRequires:  meson
 BuildRequires:  pkgconfig(glib-2.0)
