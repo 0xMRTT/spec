@@ -1,0 +1,16 @@
+2022-08-23 13:19:32,038 - Mock Version: 3.1
+2022-08-23 13:19:33,178 - Start: dnf update
+2022-08-23 13:19:47,693 - Finish: dnf update
+2022-08-23 13:19:47,709 - Finish: chroot init
+2022-08-23 13:19:47,714 - Start: build phase for kooha-2.1.1-1.fc37.src.rpm
+2022-08-23 13:19:47,717 - Start: build setup for kooha-2.1.1-1.fc37.src.rpm
+2022-08-23 13:20:07,401 - Finish: build setup for kooha-2.1.1-1.fc37.src.rpm
+2022-08-23 13:20:07,401 - Finish: build phase for kooha-2.1.1-1.fc37.src.rpm
+2022-08-23 13:24:04,031 - Mock Version: 3.1
+2022-08-23 13:24:05,071 - Start: dnf update
+2022-08-23 13:24:12,357 - Finish: dnf update
+2022-08-23 13:24:12,373 - Finish: chroot init
+2022-08-23 13:24:12,379 - Start: build phase for kooha-2.1.1-1.fc37.src.rpm
+2022-08-23 13:24:12,382 - Start: build setup for kooha-2.1.1-1.fc37.src.rpm
+2022-08-23 13:24:24,485 - Finish: build setup for kooha-2.1.1-1.fc37.src.rpm
+2022-08-23 13:24:24,485 - Finish: build phase for kooha-2.1.1-1.fc37.src.rpm
