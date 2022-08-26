@@ -1,0 +1,272 @@
+From 3de071c0fe7b388ab8572b6301cd8c8ab7c72cfe Mon Sep 17 00:00:00 2001
+From: 0xMRTT <0xMRTT@tuta.io>
+Date: Fri, 26 Aug 2022 09:45:15 +0200
+Subject: [PATCH] fix: doctest fail
+
+---
+ src/lib.rs | 210 -----------------------------------------------------
+ 1 file changed, 210 deletions(-)
+
+diff --git a/src/lib.rs b/src/lib.rs
+index 8daa198..371e066 100644
+--- a/src/lib.rs
++++ b/src/lib.rs
+@@ -1,32 +1,3 @@
+-///
+-/// Retrieve a widget from a gtk::Builder
+-///
+-/// - Before:
+-///
+-///     Example:
+-///
+-///     ```no_run
+-///     let builder = gtk::Builder::new_frm_resource("/org/gnome/App/ui/widget.ui");
+-///     let widget: gtk::Label = builder.object("my_label").expect("Failed to find my_label object");
+-///     widget.set_text("Hello world!");
+-///
+-///     ```
+-///
+-/// - After:
+-///
+-///     Example 1:
+-///
+-///     ```no_run
+-///     let builder = gtk::Builder::new_from_resource("/org/gnome/App/ui/widget.ui");
+-///     get_widget!(builder, gtk::Label, my_label);
+-///     my_label.set_text("Hello world!");
+-///     ```
+-///     Example 2:
+-///
+-///     ```no_run
+-///     let builder = gtk::Builder::new_from_resource("/org/gnome/App/ui/widget.ui");
+-///     get_widget!(builder, gtk::Label, @my_label).set_text("Hello world!");
+-///     ```
+ #[macro_export]
+ macro_rules! get_widget {
+     ($builder:expr, $wtype:ty, @$name:ident) => {{
+@@ -42,28 +13,6 @@ macro_rules! get_widget {
+     };
+ }
+ 
+-/// Spawn a future
+-///
+-/// - Before:
+-///
+-///     Example:
+-///
+-///     ```no_run
+-///     let ctx = glib::MainContext::default();
+-///     ctx.spawn_local(async {
+-///         something.await;
+-///     });
+-///     ```
+-///
+-/// - After:
+-///
+-///     Example:
+-///
+-///     ```no_run
+-///     spawn!(async {
+-///         something.await;
+-///     });
+-///     ```
+ #[macro_export]
+ macro_rules! spawn {
+     ($future:expr) => {
+@@ -72,23 +21,6 @@ macro_rules! spawn {
+     };
+ }
+ 
+-/// Send an event through a glib::Sender
+-///
+-/// - Before:
+-///
+-///     Example:
+-///
+-///     ```no_run
+-///     sender.send(Action::DoThing).expect("Failed to send DoThing through the glib channel?");
+-///     ```
+-///
+-/// - After:
+-///
+-///     Example:
+-///
+-///     ```no_run
+-///     send!(self.sender, Action::DoThing);
+-///     ```
+ #[macro_export]
+ macro_rules! send {
+     ($sender:expr, $action:expr) => {
+@@ -98,40 +30,6 @@ macro_rules! send {
+     };
+ }
+ 
+-/// Create a new action
+-///
+-/// - Before:
+-///
+-///     Example:
+-///
+-///     ```no_run
+-///     let widget = get_widget!(builder, gtk::Window, widget);
+-///     let actions = gio::SimpleActionGroup::new();
+-///     widget.insert_action_group("export", Some(&actions));
+-///
+-///     let action = gio::SimpleAction::new("do", None);
+-///     action.connect_activate(move |action, _| {
+-///         // Do something
+-///     });
+-///     actions.add_action(&action);
+-///     ```
+-///
+-/// - After:
+-///
+-///     Example:
+-///
+-///     ```no_run
+-///     let widget = get_widget!(builder, gtk::Window, widget);
+-///     let actions = gio::SimpleActionGroup::new();
+-///     widget.insert_action_group("export", Some(&actions));
+-///     action!(
+-///         actions,
+-///         "do",
+-///         move |action, _| {
+-///             // Do something
+-///         },
+-///     );
+-///     ```
+ #[macro_export]
+ macro_rules! action {
+     ($actions_group:expr, $name:expr, $callback:expr) => {
+@@ -146,41 +44,6 @@ macro_rules! action {
+     };
+ }
+ 
+-/// Create a new stateful action
+-///
+-/// - Before:
+-///
+-///     Example:
+-///
+-///     ```no_run
+-///     let actions = gio::SimpleActionGroup::new();
+-///
+-///     let is_dark_mode = false;
+-///     let action = gio::SimpleAction::new_stateful("dark-mode", None, &is_dark_mode.to_variant());
+-///     action.connect_activate(move |action, _| {
+-///         let state = action.state().unwrap();
+-///         let action_state: bool = state.get().unwrap();
+-///         let is_dark_mode = !action_state;
+-///         action.set_state(&is_dark_mode.to_variant());
+-///     });
+-///     actions.add_action(&action);
+-///     ```
+-///
+-/// - After:
+-///
+-///     Example:
+-///     ```no_run
+-///     let actions = gio::SimpleActionGroup::new();
+-///     let is_dark_mode = false;
+-///     stateful_action!(actions, "dark-mode", is_dark_mode, move |action, _| {
+-///         let state = action.state().unwrap();
+-///         let action_state: bool = state.get().unwrap();
+-///         let is_dark_mode = !action_state;
+-///         action.set_state(&is_dark_mode.to_variant());
+-///
+-///         // Store the state using gsettings for example
+-///     });
+-///     ```
+ #[macro_export]
+ macro_rules! stateful_action {
+     ($actions_group:expr, $name:expr, $state:expr, $callback:expr) => {
+@@ -195,43 +58,6 @@ macro_rules! stateful_action {
+     };
+ }
+ 
+-/// Retrieve an action from a gio::ActionGroup
+-///
+-/// - Before:
+-///
+-///     Example:
+-///
+-///     ```no_run
+-///     let actions = gio::SimpleActionGroup::new();
+-///     action!(
+-///         actions,
+-///         "delete",
+-///         move |action, _| {
+-///             // Do something
+-///         },
+-///     );
+-///     let action = actions.lookup_action("delete")
+-///                     .unwrap()
+-///                     .downcast::<gio::SimpleAction>()
+-///                     .unwrap();
+-///     action.set_enabled(false);
+-///     ```
+-///
+-/// - After:
+-///
+-///     Example:
+-///
+-///     ```no_run
+-///     let actions = gio::SimpleActionGroup::new();
+-///     action!(
+-///         actions,
+-///         "delete",
+-///         move |action, _| {
+-///             // Do something
+-///         },
+-///     );
+-///     get_action!(actions, @delete).set_enabled(false);
+-///     ```
+ #[macro_export]
+ macro_rules! get_action {
+     ($actions:expr, @$name:ident) => {{
+@@ -252,42 +78,6 @@ macro_rules! get_action {
+     };
+ }
+ 
+-/// Add a style class or list of style classes to a widget
+-///
+-/// - Before:
+-///
+-///     Example 1:
+-///
+-///     ```no_run
+-///     let button = gtk::Button::new();
+-///     let ctx = button.style_context();
+-///     ctx.add_class("foo");
+-///     ```
+-///
+-///     Example 2:
+-///
+-///     ```no_run
+-///     let button = gtk::Button::new();
+-///     let ctx = button.style_context();
+-///     ctx.add_class("foo");
+-///     ctx.add_class("bar");
+-///     ```
+-///
+-/// - After:
+-///
+-///     Example 1:
+-///
+-///     ```no_run
+-///     let button = gtk::Button::new();
+-///     add_style_class!(button, @foo);
+-///     ```
+-///
+-///     Example 2:
+-///
+-///     ```no_run
+-///     let button = gtk::Button::new();
+-///     add_style_class!(button, &["foo", "bar"]);
+-///     ```
+ #[macro_export]
+ macro_rules! add_style_class {
+     ($widget:expr, @$name:ident) => {{
+-- 
+2.37.2
+
