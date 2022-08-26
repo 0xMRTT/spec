@@ -1,0 +1,8 @@
+2022-08-23 18:15:23,454 - Mock Version: 3.1
+2022-08-23 18:15:24,461 - Start: dnf update
+2022-08-23 18:15:36,177 - Finish: dnf update
+2022-08-23 18:15:36,193 - Finish: chroot init
+2022-08-23 18:15:36,198 - Start: build phase for gdm-settings-0.6-1.fc37.src.rpm
+2022-08-23 18:15:36,201 - Start: build setup for gdm-settings-0.6-1.fc37.src.rpm
+2022-08-23 18:15:49,730 - Finish: build setup for gdm-settings-0.6-1.fc37.src.rpm
+2022-08-23 18:15:49,731 - Finish: build phase for gdm-settings-0.6-1.fc37.src.rpm
