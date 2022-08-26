@@ -1,0 +1,8 @@
+2022-08-22 17:36:49,340 - Mock Version: 3.1
+2022-08-22 17:36:50,455 - Start: dnf update
+2022-08-22 17:37:00,394 - Finish: dnf update
+2022-08-22 17:37:00,411 - Finish: chroot init
+2022-08-22 17:37:00,418 - Start: build phase for extension-manager-0.3.1-1.fc37.src.rpm
+2022-08-22 17:37:00,422 - Start: build setup for extension-manager-0.3.1-1.fc37.src.rpm
+2022-08-22 17:37:11,163 - Finish: build setup for extension-manager-0.3.1-1.fc37.src.rpm
+2022-08-22 17:37:11,164 - Finish: build phase for extension-manager-0.3.1-1.fc37.src.rpm

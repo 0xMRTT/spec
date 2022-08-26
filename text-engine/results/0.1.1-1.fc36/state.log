@@ -1,0 +1,87 @@
+2022-08-22 10:42:50,962 - Mock Version: 3.1
+2022-08-22 10:42:51,964 - Start: dnf update
+2022-08-22 10:44:14,076 - Finish: dnf update
+2022-08-22 10:44:14,083 - Finish: chroot init
+2022-08-22 10:44:14,085 - Start: build phase for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:44:14,086 - Start: build setup for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:45:09,739 - Finish: build setup for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:45:09,739 - Start: Outputting list of installed packages
+2022-08-22 10:45:09,945 - Finish: Outputting list of installed packages
+2022-08-22 10:45:09,945 - Start: rpmbuild text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:45:10,412 - Finish: rpmbuild text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:45:10,412 - Finish: build phase for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:46:38,107 - Mock Version: 3.1
+2022-08-22 10:46:38,807 - Start: dnf update
+2022-08-22 10:46:46,603 - Finish: dnf update
+2022-08-22 10:46:46,614 - Finish: chroot init
+2022-08-22 10:46:46,616 - Start: build phase for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:46:46,617 - Start: build setup for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:47:36,035 - Finish: build setup for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:47:36,036 - Start: Outputting list of installed packages
+2022-08-22 10:47:36,254 - Finish: Outputting list of installed packages
+2022-08-22 10:47:36,254 - Start: rpmbuild text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:47:37,325 - Finish: rpmbuild text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:47:37,325 - Finish: build phase for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:49:11,251 - Mock Version: 3.1
+2022-08-22 10:49:11,951 - Start: dnf update
+2022-08-22 10:49:19,653 - Finish: dnf update
+2022-08-22 10:49:19,658 - Finish: chroot init
+2022-08-22 10:49:19,660 - Start: build phase for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:49:19,661 - Start: build setup for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:50:08,216 - Finish: build setup for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:50:08,217 - Start: Outputting list of installed packages
+2022-08-22 10:50:08,445 - Finish: Outputting list of installed packages
+2022-08-22 10:50:08,445 - Start: rpmbuild text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:50:12,903 - Finish: rpmbuild text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:50:12,903 - Finish: build phase for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:56:53,594 - Mock Version: 3.1
+2022-08-22 10:56:54,270 - Start: dnf update
+2022-08-22 10:57:01,614 - Finish: dnf update
+2022-08-22 10:57:01,619 - Finish: chroot init
+2022-08-22 10:57:01,621 - Start: build phase for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:57:01,622 - Start: build setup for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:57:47,325 - Finish: build setup for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:57:47,326 - Start: Outputting list of installed packages
+2022-08-22 10:57:47,577 - Finish: Outputting list of installed packages
+2022-08-22 10:57:47,577 - Start: rpmbuild text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:57:52,334 - Finish: rpmbuild text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:57:52,334 - Finish: build phase for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:58:38,119 - Mock Version: 3.1
+2022-08-22 10:58:38,859 - Start: dnf update
+2022-08-22 10:58:46,100 - Finish: dnf update
+2022-08-22 10:58:46,107 - Finish: chroot init
+2022-08-22 10:58:46,108 - Start: build phase for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:58:46,109 - Start: build setup for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:59:29,689 - Finish: build setup for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:59:29,689 - Start: Outputting list of installed packages
+2022-08-22 10:59:29,899 - Finish: Outputting list of installed packages
+2022-08-22 10:59:29,899 - Start: rpmbuild text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:59:33,960 - Finish: rpmbuild text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 10:59:33,960 - Finish: build phase for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 11:01:04,504 - Mock Version: 3.1
+2022-08-22 11:01:05,197 - Start: dnf update
+2022-08-22 11:01:12,344 - Finish: dnf update
+2022-08-22 11:01:12,349 - Finish: chroot init
+2022-08-22 11:01:12,350 - Start: build phase for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 11:01:12,351 - Start: build setup for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 11:01:55,152 - Finish: build setup for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 11:01:55,153 - Start: Outputting list of installed packages
+2022-08-22 11:01:55,371 - Finish: Outputting list of installed packages
+2022-08-22 11:01:55,371 - Start: rpmbuild text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 11:01:59,297 - Finish: rpmbuild text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 11:01:59,297 - Finish: build phase for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 11:03:20,219 - Mock Version: 3.1
+2022-08-22 11:03:20,866 - Start: dnf update
+2022-08-22 11:03:27,796 - Finish: dnf update
+2022-08-22 11:03:27,802 - Finish: chroot init
+2022-08-22 11:03:27,804 - Start: build phase for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 11:03:27,805 - Start: build setup for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 11:04:11,641 - Finish: build setup for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 11:04:11,642 - Start: Outputting list of installed packages
+2022-08-22 11:04:11,872 - Finish: Outputting list of installed packages
+2022-08-22 11:04:11,873 - Start: rpmbuild text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 11:04:15,978 - Finish: rpmbuild text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 11:04:15,987 - Finish: build phase for text-engine-0.1.1-1.fc36.src.rpm
+2022-08-22 11:04:15,990 - Start: clean chroot
+2022-08-22 11:04:20,643 - Finish: clean chroot
+2022-08-22 11:04:20,644 - Finish: run
