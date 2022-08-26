@@ -45,7 +45,7 @@ A tool for generating 2FA codes. Authenticator has a lot of features:
 
 
 %prep
-%autosetup -n authenticator-%{version} -p1
+%autosetup -n authenticator-%{version}
 	
   
   
